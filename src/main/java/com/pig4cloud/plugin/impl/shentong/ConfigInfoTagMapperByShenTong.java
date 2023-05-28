@@ -1,13 +1,10 @@
-package com.pig4cloud.plugin.impl.oracle;
+package com.pig4cloud.plugin.impl.shentong;
 
 import com.alibaba.nacos.plugin.datasource.constants.TableConstant;
-import com.alibaba.nacos.plugin.datasource.mapper.AbstractMapper;
 import com.alibaba.nacos.plugin.datasource.mapper.ConfigInfoTagMapper;
 import com.pig4cloud.plugin.constants.DataSourceConstant;
 
-import java.util.List;
-
-public class ConfigInfoTagMapperByOracle extends OracleAbstractMapper implements ConfigInfoTagMapper {
+public class ConfigInfoTagMapperByShenTong extends ShenTongAbstractMapper implements ConfigInfoTagMapper {
 
 	@Override
 	public String updateConfigInfo4TagCas() {
@@ -29,7 +26,7 @@ public class ConfigInfoTagMapperByOracle extends OracleAbstractMapper implements
 
 	@Override
 	public String getDataSource() {
-		return DataSourceConstant.ORACLE;
+		return DataSourceConstant.SHEN_TONG;
 	}
 
 }

@@ -1,11 +1,10 @@
-package com.pig4cloud.plugin.impl.oracle;
+package com.pig4cloud.plugin.impl.shentong;
 
 import com.alibaba.nacos.plugin.datasource.constants.TableConstant;
-import com.alibaba.nacos.plugin.datasource.mapper.AbstractMapper;
 import com.alibaba.nacos.plugin.datasource.mapper.GroupCapacityMapper;
 import com.pig4cloud.plugin.constants.DataSourceConstant;
 
-public class GroupCapacityMapperByOracle extends OracleAbstractMapper implements GroupCapacityMapper {
+public class GroupCapacityMapperByShenTong extends ShenTongAbstractMapper implements GroupCapacityMapper {
 
 	@Override
 	public String insertIntoSelect() {
@@ -62,7 +61,7 @@ public class GroupCapacityMapperByOracle extends OracleAbstractMapper implements
 
 	@Override
 	public String getDataSource() {
-		return DataSourceConstant.ORACLE;
+		return DataSourceConstant.SHEN_TONG;
 	}
 
 }

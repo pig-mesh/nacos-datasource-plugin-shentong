@@ -10,10 +10,10 @@
 
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>com.pig4cloud.plugin</groupId>
-	<artifactId>nacos-datasource-plugin-oracle</artifactId>
+	<artifactId>nacos-datasource-plugin-shentong</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>nacos-datasource-plugin-oracle</name>
-	<description>nacos-datasource-plugin-oracle</description>
+	<name>nacos-datasource-plugin-shentong</name>
+	<description>nacos-datasource-plugin-shentong</description>
 	<url>https://pig4cloud.com</url>
 
 	<licenses>

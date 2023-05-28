@@ -1,10 +1,10 @@
-package com.pig4cloud.plugin.impl.oracle;
+package com.pig4cloud.plugin.impl.shentong;
 
 import com.alibaba.nacos.plugin.datasource.constants.TableConstant;
 import com.alibaba.nacos.plugin.datasource.mapper.ConfigInfoBetaMapper;
 import com.pig4cloud.plugin.constants.DataSourceConstant;
 
-public class ConfigInfoBetaMapperByOracle extends OracleAbstractMapper implements ConfigInfoBetaMapper {
+public class ConfigInfoBetaMapperByShenTong extends ShenTongAbstractMapper implements ConfigInfoBetaMapper {
 
 	@Override
 	public String updateConfigInfo4BetaCas() {
@@ -26,7 +26,7 @@ public class ConfigInfoBetaMapperByOracle extends OracleAbstractMapper implement
 
 	@Override
 	public String getDataSource() {
-		return DataSourceConstant.ORACLE;
+		return DataSourceConstant.SHEN_TONG;
 	}
 
 }

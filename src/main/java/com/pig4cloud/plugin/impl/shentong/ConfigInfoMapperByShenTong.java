@@ -1,4 +1,4 @@
-package com.pig4cloud.plugin.impl.oracle;
+package com.pig4cloud.plugin.impl.shentong;
 
 import com.alibaba.nacos.common.utils.CollectionUtils;
 import com.alibaba.nacos.common.utils.StringUtils;
@@ -11,7 +11,7 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
 
-public class ConfigInfoMapperByOracle extends OracleAbstractMapper implements ConfigInfoMapper {
+public class ConfigInfoMapperByShenTong extends ShenTongAbstractMapper implements ConfigInfoMapper {
 
 	private static final String DATA_ID = "dataId";
 
@@ -374,7 +374,7 @@ public class ConfigInfoMapperByOracle extends OracleAbstractMapper implements Co
 
 	@Override
 	public String getDataSource() {
-		return DataSourceConstant.ORACLE;
+		return DataSourceConstant.SHEN_TONG;
 	}
 
 }

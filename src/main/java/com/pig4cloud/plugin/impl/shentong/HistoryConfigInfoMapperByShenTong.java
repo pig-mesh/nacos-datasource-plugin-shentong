@@ -1,11 +1,10 @@
-package com.pig4cloud.plugin.impl.oracle;
+package com.pig4cloud.plugin.impl.shentong;
 
 import com.alibaba.nacos.plugin.datasource.constants.TableConstant;
-import com.alibaba.nacos.plugin.datasource.mapper.AbstractMapper;
 import com.alibaba.nacos.plugin.datasource.mapper.HistoryConfigInfoMapper;
 import com.pig4cloud.plugin.constants.DataSourceConstant;
 
-public class HistoryConfigInfoMapperByOracle extends OracleAbstractMapper implements HistoryConfigInfoMapper {
+public class HistoryConfigInfoMapperByShenTong extends ShenTongAbstractMapper implements HistoryConfigInfoMapper {
 
 	@Override
 	public String removeConfigHistory() {
@@ -41,7 +40,7 @@ public class HistoryConfigInfoMapperByOracle extends OracleAbstractMapper implem
 
 	@Override
 	public String getDataSource() {
-		return DataSourceConstant.ORACLE;
+		return DataSourceConstant.SHEN_TONG;
 	}
 
 }
